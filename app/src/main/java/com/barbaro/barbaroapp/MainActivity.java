@@ -22,15 +22,15 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); // Inflar
 
 
         TabLayout tabLayout = findViewById(R.id.tab);
 
         // Agregando taps
-        tabLayout.addTab(tabLayout.newTab().setText("Hola"));
-        tabLayout.addTab(tabLayout.newTab().setText("Barbaro"));
-        tabLayout.addTab(tabLayout.newTab().setText("Producto"));
+        tabLayout.addTab(tabLayout.newTab().setText("Techology"));
+        tabLayout.addTab(tabLayout.newTab().setText("Home"));
+        //tabLayout.addTab(tabLayout.newTab().setText("Producto"));
 
         // Configurando el listener para cuando se seleccione una tab
         tabLayout.addOnTabSelectedListener(this);
@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         fragments = new ArrayList<>();
 
         // Agregar los tres fragments que seran la vista por cada tab
-        fragments.add(Fragment1.newInstance("Hola mundo"));
-        fragments.add(Fragment1.newInstance("Barbarillo"));
+        fragments.add(Fragment1.newInstance());
         fragments.add(Fragment2.newInstance("Computadora", "Una computadora barbara"));
     }
 
