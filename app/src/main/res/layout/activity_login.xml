@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <EditText
+        style="@style/EditLogin"
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="CORREO" />
+
+    <EditText
+        style="@style/EditLogin"
+        android:id="@+id/editPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/editEmail"
+        android:hint="CONTRASEÑA" />
+
+    <TextView
+        android:id="@+id/txtRegistrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPass"
+        android:text="REGISTRATE CON"
+        android:textColor="@android:color/white"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/login_background"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/txtRegistrate"
+        android:layout_below="@id/editPass"
+        android:layout_alignTop="@id/txtRegistrate"
+        android:layout_alignBottom="@id/txtRegistrate" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/login_background"
+        android:layout_below="@id/editPass"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/txtRegistrate"
+        android:layout_alignTop="@id/txtRegistrate"
+        android:layout_alignBottom="@id/txtRegistrate" />
+
+</RelativeLayout>

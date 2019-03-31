@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        android:layout_toEndOf="@id/imgPerfil"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Florecitas casa hogar"
+        android:layout_below="@id/txtPerfil"
+        android:layout_toEndOf="@id/imgPerfil"/>
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inicio"
+        android:gravity="start|center_vertical"
+        android:layout_below="@id/imgPerfil"/>
+    <Button
+        android:id="@+id/btnDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:gravity="start|center_vertical"
+        android:layout_below="@id/btnInicio"/>
+    <Button
+        android:id="@+id/btnAyudar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayuda"
+        android:gravity="start|center_vertical"
+        android:layout_below="@id/btnDashboard"/>
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:gravity="start|center_vertical"
+        android:layout_below="@id/btnAyudar"/>
+
+</RelativeLayout>
