@@ -134,6 +134,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@id/btnNext"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/btnNext"/>
+        app:layout_constraintEnd_toEndOf="@id/btnNext"
+        app:dotsColor="#00ff15" />
 
 </android.support.constraint.ConstraintLayout>
